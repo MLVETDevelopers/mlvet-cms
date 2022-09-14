@@ -1,25 +1,48 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "landing_pages",
   "info": {
     "singularName": "landing-page",
     "pluralName": "landing-pages",
-    "displayName": "Landing Page"
+    "displayName": "Landing Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "contentBlocks": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::content-block.content-block"
+    "tagline": {
+      "type": "string",
+      "required": true
     },
-    "hero": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::hero.hero"
+    "downloadButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "footerText": {
+      "type": "string",
+      "required": true
+    },
+    "footerSubText": {
+      "type": "string",
+      "required": true
+    },
+    "contentBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.content-block"
     }
   }
 }

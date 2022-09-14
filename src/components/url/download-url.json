@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_url_download_urls",
+  "info": {
+    "displayName": "downloadUrl",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "osLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "os": {
+      "type": "enumeration",
+      "enum": [
+        "windowsX86",
+        "windowsArm",
+        "macosX86",
+        "macosArm",
+        "linuxX86",
+        "linuxArm"
+      ],
+      "required": true
+    }
+  }
+}
