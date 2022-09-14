@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "url": {
+    "x86Url": {
       "type": "string",
       "required": true
     },
@@ -24,14 +24,14 @@
     "os": {
       "type": "enumeration",
       "enum": [
-        "windowsX86",
-        "windowsArm",
-        "macosX86",
-        "macosArm",
-        "linuxX86",
-        "linuxArm"
+        "windows",
+        "macOS",
+        "linux"
       ],
       "required": true
+    },
+    "armUrl": {
+      "type": "string"
     }
   }
 }
