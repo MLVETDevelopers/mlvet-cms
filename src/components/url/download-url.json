@@ -24,9 +24,9 @@
     "os": {
       "type": "enumeration",
       "enum": [
-        "windows",
+        "Windows",
         "macOS",
-        "linux"
+        "Linux"
       ],
       "required": true
     },
