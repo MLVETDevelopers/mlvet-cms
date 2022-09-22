@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "help_doc_categories",
+  "info": {
+    "singularName": "help-doc-category",
+    "pluralName": "help-doc-categories",
+    "displayName": "Help Doc Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "help_doc_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::help-doc-article.help-doc-article",
+      "mappedBy": "help_doc_category"
+    }
+  }
+}
